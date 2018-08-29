@@ -12,6 +12,7 @@
 		BA4859BD2136E35900F05576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4859BB2136E35900F05576 /* Main.storyboard */; };
 		BA4859BF2136E35B00F05576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4859BE2136E35B00F05576 /* Assets.xcassets */; };
 		BA4859C22136E35B00F05576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4859C02136E35B00F05576 /* LaunchScreen.storyboard */; };
+		BA4859CD2136E8DC00F05576 /* ZYFEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4859CC2136E8DC00F05576 /* ZYFEmoticonManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BA4859BE2136E35B00F05576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA4859C12136E35B00F05576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA4859C32136E35B00F05576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA4859CC2136E8DC00F05576 /* ZYFEmoticonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYFEmoticonManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		BA4859B62136E35900F05576 /* emailDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA4859C92136E6D000F05576 /* Emoticon */,
 				BA4859B72136E35900F05576 /* AppDelegate.swift */,
 				BA4859B92136E35900F05576 /* ViewController.swift */,
 				BA4859BB2136E35900F05576 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				BA4859C32136E35B00F05576 /* Info.plist */,
 			);
 			path = emailDemo;
+			sourceTree = "<group>";
+		};
+		BA4859C92136E6D000F05576 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				BA4859CC2136E8DC00F05576 /* ZYFEmoticonManager.swift */,
+			);
+			path = Emoticon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4859CD2136E8DC00F05576 /* ZYFEmoticonManager.swift in Sources */,
 				BA4859BA2136E35900F05576 /* ViewController.swift in Sources */,
 				BA4859B82136E35900F05576 /* AppDelegate.swift in Sources */,
 			);
