@@ -38,10 +38,36 @@ class ZYFEmoticon: NSObject {
         
     }
     
+    /// 将当前的图像转换生成图片的属性文本
+    ///
+    /// - Parameter font: 字体大小
+    /// - Returns: 返回属性文本
+    func imageText(font: UIFont) -> NSAttributedString {
+        //1.判断图像是否存在
+        guard let image = image else {
+            return NSAttributedString(string: "")
+        }
+        //2.创建文本附件
+        let attachment = NSTextAttachment()
+        attachment.image = image
+        let height = font.lineHeight
+        attachment.bounds = CGRect(x: 0, y: -4, width: height, height: height)
+        //3.返回图片属性文本
+        return NSAttributedString(attachment: attachment)
+        
+    }
     
     @objc override var description: String {
         return yy_modelDescription()
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }

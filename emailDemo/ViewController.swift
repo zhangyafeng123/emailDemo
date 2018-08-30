@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    @IBOutlet weak var demoLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         
         //----测试查找表情
         print(ZYFEmoticonManager.shared.findEmoticon(string: "[爱你]"))
+        
+        let lm = ZYFEmoticonManager.shared.findEmoticon(string: "[马上有对象]")
+        
+        demoLabel.attributedText = lm?.imageText(font: demoLabel.font)
+        
     }
 
 }
