@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //倒序遍历，否则前面的长度会失效
-        demoLabel.attributedText = emoticonString(string: "我[爱你]啊[笑哈哈]!")
+        //demoLabel.attributedText = emoticonString(string: "我[爱你]啊[笑哈哈]!")
+        demoLabel.attributedText = ZYFEmoticonManager.shared.emoticonString(string: "我[爱你]啊[笑哈哈]!", font: demoLabel.font)
     }
     
     /// 将给定的字符串转换成属性文本
