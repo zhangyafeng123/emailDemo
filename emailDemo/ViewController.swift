@@ -16,7 +16,11 @@ class ViewController: UIViewController {
         
         let manager = ZYFEmoticonManager.shared
        // print(manager.packages)
+        //----测试表情图像-----
         print(manager.packages.last?.emoticons.first?.image)
+        
+        //----测试查找表情
+        print(ZYFEmoticonManager.shared.findEmoticon(string: "[爱你]"))
     }
 
 }

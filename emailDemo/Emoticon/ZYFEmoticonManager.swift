@@ -22,6 +22,30 @@ class ZYFEmoticonManager {
     
 }
 
+extension ZYFEmoticonManager {
+    //根据 string [爱你] 在所有的表情符号中查找对应的表情模型对象
+    
+    // - 如果找到了 返回表情模型
+    // - 否则返回 nil
+    func findEmoticon(string: String) -> ZYFEmoticon? {
+        //1.便利表情包
+        // OC 中过滤使用 【谓词】
+        // swift 中更简单
+        for p in packages {
+            //2.在表情数组中过滤string
+            let result = p.emoticons.filter { (em) -> Bool in
+                return em.chs == string
+            }
+            if result.count == 1 {
+                return result[0]
+            }
+        }
+        
+        return nil
+    }
+    
+}
+
 private extension ZYFEmoticonManager {
     
     func loadPackages()  {
