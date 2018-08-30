@@ -8,16 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		9C636B2621378C8800F2D608 /* HMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C636B2521378C8800F2D608 /* HMEmoticon.bundle */; };
+		9C636B292137923A00F2D608 /* ZYFEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C636B282137923A00F2D608 /* ZYFEmoticon.swift */; };
+		9C636B2B2137944D00F2D608 /* ZYFEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C636B2A2137944D00F2D608 /* ZYFEmoticonPackage.swift */; };
 		BA4859B82136E35900F05576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4859B72136E35900F05576 /* AppDelegate.swift */; };
 		BA4859BA2136E35900F05576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4859B92136E35900F05576 /* ViewController.swift */; };
 		BA4859BD2136E35900F05576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4859BB2136E35900F05576 /* Main.storyboard */; };
 		BA4859BF2136E35B00F05576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4859BE2136E35B00F05576 /* Assets.xcassets */; };
 		BA4859C22136E35B00F05576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4859C02136E35B00F05576 /* LaunchScreen.storyboard */; };
 		BA4859CD2136E8DC00F05576 /* ZYFEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4859CC2136E8DC00F05576 /* ZYFEmoticonManager.swift */; };
+		F2D390AD8C6EED8EF3407D02 /* Pods_emailDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF551BFEDFECF3B2AA7C8BAE /* Pods_emailDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		473ED3225D831C115D8DC16A /* Pods-emailDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emailDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-emailDemo/Pods-emailDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9C636B2521378C8800F2D608 /* HMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HMEmoticon.bundle; sourceTree = "<group>"; };
+		9C636B282137923A00F2D608 /* ZYFEmoticon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYFEmoticon.swift; sourceTree = "<group>"; };
+		9C636B2A2137944D00F2D608 /* ZYFEmoticonPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYFEmoticonPackage.swift; sourceTree = "<group>"; };
+		AF551BFEDFECF3B2AA7C8BAE /* Pods_emailDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emailDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4859B42136E35900F05576 /* emailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4859B72136E35900F05576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA4859B92136E35900F05576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +33,7 @@
 		BA4859C12136E35B00F05576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA4859C32136E35B00F05576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA4859CC2136E8DC00F05576 /* ZYFEmoticonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYFEmoticonManager.swift; sourceTree = "<group>"; };
+		CE30D3CE43246A28ED578D44 /* Pods-emailDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emailDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emailDemo/Pods-emailDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D390AD8C6EED8EF3407D02 /* Pods_emailDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AC08A89ECF770AD457B4C53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF551BFEDFECF3B2AA7C8BAE /* Pods_emailDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		613C1BFCCCD58CFBEFB0300F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE30D3CE43246A28ED578D44 /* Pods-emailDemo.debug.xcconfig */,
+				473ED3225D831C115D8DC16A /* Pods-emailDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C636B272137920E00F2D608 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C636B282137923A00F2D608 /* ZYFEmoticon.swift */,
+				9C636B2A2137944D00F2D608 /* ZYFEmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BA4859AB2136E35900F05576 = {
 			isa = PBXGroup;
 			children = (
 				BA4859B62136E35900F05576 /* emailDemo */,
 				BA4859B52136E35900F05576 /* Products */,
+				613C1BFCCCD58CFBEFB0300F /* Pods */,
+				5AC08A89ECF770AD457B4C53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +109,7 @@
 		BA4859C92136E6D000F05576 /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
+				9C636B272137920E00F2D608 /* Model */,
 				9C636B2521378C8800F2D608 /* HMEmoticon.bundle */,
 				BA4859CC2136E8DC00F05576 /* ZYFEmoticonManager.swift */,
 			);
@@ -85,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA4859C62136E35B00F05576 /* Build configuration list for PBXNativeTarget "emailDemo" */;
 			buildPhases = (
+				BEA4D118BFE6925E165FFE82 /* [CP] Check Pods Manifest.lock */,
 				BA4859B02136E35900F05576 /* Sources */,
 				BA4859B12136E35900F05576 /* Frameworks */,
 				BA4859B22136E35900F05576 /* Resources */,
+				FEF5EDBA7D954C242B8AA626 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,14 +185,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BEA4D118BFE6925E165FFE82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-emailDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF5EDBA7D954C242B8AA626 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-emailDemo/Pods-emailDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emailDemo/Pods-emailDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA4859B02136E35900F05576 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C636B2B2137944D00F2D608 /* ZYFEmoticonPackage.swift in Sources */,
 				BA4859CD2136E8DC00F05576 /* ZYFEmoticonManager.swift in Sources */,
 				BA4859BA2136E35900F05576 /* ViewController.swift in Sources */,
 				BA4859B82136E35900F05576 /* AppDelegate.swift in Sources */,
+				9C636B292137923A00F2D608 /* ZYFEmoticon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +375,7 @@
 		};
 		BA4859C72136E35B00F05576 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE30D3CE43246A28ED578D44 /* Pods-emailDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +393,7 @@
 		};
 		BA4859C82136E35B00F05576 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473ED3225D831C115D8DC16A /* Pods-emailDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
