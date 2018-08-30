@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C636B2621378C8800F2D608 /* HMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C636B2521378C8800F2D608 /* HMEmoticon.bundle */; };
 		BA4859B82136E35900F05576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4859B72136E35900F05576 /* AppDelegate.swift */; };
 		BA4859BA2136E35900F05576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4859B92136E35900F05576 /* ViewController.swift */; };
 		BA4859BD2136E35900F05576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4859BB2136E35900F05576 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C636B2521378C8800F2D608 /* HMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HMEmoticon.bundle; sourceTree = "<group>"; };
 		BA4859B42136E35900F05576 /* emailDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emailDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4859B72136E35900F05576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA4859B92136E35900F05576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		BA4859C92136E6D000F05576 /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
+				9C636B2521378C8800F2D608 /* HMEmoticon.bundle */,
 				BA4859CC2136E8DC00F05576 /* ZYFEmoticonManager.swift */,
 			);
 			path = Emoticon;
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C636B2621378C8800F2D608 /* HMEmoticon.bundle in Resources */,
 				BA4859C22136E35B00F05576 /* LaunchScreen.storyboard in Resources */,
 				BA4859BF2136E35B00F05576 /* Assets.xcassets in Resources */,
 				BA4859BD2136E35900F05576 /* Main.storyboard in Resources */,

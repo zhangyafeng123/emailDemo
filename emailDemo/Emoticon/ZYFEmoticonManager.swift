@@ -24,8 +24,15 @@ private extension ZYFEmoticonManager {
     
     func loadPackages()  {
         //读取emoticons.plist
-        let path = Bundle.main.path(forResource: "Emoticons.bundle", ofType: nil)
-        print(path)
+        //只要按照 Bundle 默认的目录结构设定，就可以直接读取 Resources 目录下的文件
+        guard let path = Bundle.main.path(forResource: "HMEmoticon.bundle", ofType: nil),
+            let bundle = Bundle(path: path),
+            let plistPath = bundle.path(forResource: "emoticons.plist", ofType: nil),
+            let array = NSArray(contentsOfFile: plistPath) as? [[String:String]] else {
+            return
+        }
+        
+        print(array)
         
     }
 }
