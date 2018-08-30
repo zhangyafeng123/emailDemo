@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ZYFEmoticonManager.shared
-        
+        let manager = ZYFEmoticonManager.shared
+        print(manager.packages)
     }
 
 }
