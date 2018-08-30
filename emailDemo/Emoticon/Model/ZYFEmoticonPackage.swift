@@ -22,6 +22,10 @@ class ZYFEmoticonPackage: NSObject {
                 let models = NSArray.yy_modelArray(with: ZYFEmoticon.self, json: array) as? [ZYFEmoticon] else {
                 return
             }
+            //便利 models 数组，设置每一个表情符号的目录
+            for m in models {
+                m.directory = directory
+            }
            //设置表情模型数组
             emoticons += models
             

@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let manager = ZYFEmoticonManager.shared
-        print(manager.packages)
+       // print(manager.packages)
+        print(manager.packages.last?.emoticons.first?.image)
     }
 
 }
