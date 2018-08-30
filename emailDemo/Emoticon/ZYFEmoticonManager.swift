@@ -33,9 +33,15 @@ extension ZYFEmoticonManager {
         // swift 中更简单
         for p in packages {
             //2.在表情数组中过滤string
-            let result = p.emoticons.filter { (em) -> Bool in
-                return em.chs == string
-            }
+//            let result = p.emoticons.filter { (em) -> Bool in
+//                return em.chs == string
+//            }
+            //方法 - 如果闭包中只有一句，并且是返回
+            // 1> 闭包格式定义可以省略
+            // 2> 参数省略之后，使用 $0,$1 ... 依次替代原有的参数
+            // 3> return 也可以省略
+            let result = p.emoticons.filter {  $0.chs == string }
+            
             if result.count == 1 {
                 return result[0]
             }
