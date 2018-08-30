@@ -14,16 +14,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        emoticonString(string: "我[爱你]000[马上对象]ssss")
+        //倒序遍历，否则前面的长度会失效
+        demoLabel.attributedText = emoticonString(string: "我[爱你]啊[笑哈哈]!")
     }
     
     /// 将给定的字符串转换成属性文本
-    ///
+    /// 关键点要按照匹配的结果倒叙替换属性文本
     /// - Parameter string: 完整的字符串
     /// - Returns: 属性文本
     func emoticonString(string: String) -> NSAttributedString {
-        let attrString = NSAttributedString(string: string)
+        let attrString = NSMutableAttributedString(string: string)
         
         //1.建立正则表达式，过滤所有的表情文字
         // [] () 都是正则表达式的关键字，如果参与匹配需要转义
@@ -35,10 +35,14 @@ class ViewController: UIViewController {
         //2.匹配所有项
         let matches = regx.matches(in: string, options: [], range: NSRange(location: 0, length: attrString.length))
         //3.遍历所有匹配结果
-        for m in matches {
+        for m in matches.reversed() {
             let r = m.range(at: 0)
             let subStr = (attrString.string as NSString).substring(with: r)
-            print(subStr)
+            // 1> 使用 subStr 查找对应的表情符号
+            if let em = ZYFEmoticonManager.shared.findEmoticon(string: subStr) {
+                //2> 使用表情符号中的属性文本，替换原有的属性文本的内容
+                attrString.replaceCharacters(in: r, with: em.imageText(font: demoLabel.font))
+            }
         }
         return attrString
     }
